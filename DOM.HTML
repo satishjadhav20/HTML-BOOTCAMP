@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #my heading{
+        color: red;
+    }
+</style>
+<body>
+    <h1>Satish</h1>
+    <p class="by para">this is para</p>
+    <p class="by para">this is another  para</p>
+    <ul id="my ul">
+        <li>cricket</li>
+        <li>kabbadi</li>
+        <li>football</li>
+        <li>hocky</li>
+    </ul>
+    <span id="outer span">  </span>
+    <script>
+        const geading = document.getElementById("by heading");
+
+        console.log(geading);
+
+        const paras=document.getElementsByClassName("by para");
+
+        console.log(paras[1])
+
+        document.getElementsByTagName("li");
+
+        console.log(liElements);
+
+        const heading1 =document.querySelector("#my heading");
+
+        console.log(heading1);
+
+      const para1=  document.querySelector(".my para");
+      console.log(para1);
+
+      const myParagraph= document.querySelectorAll(".my para");
+      console.log(myParagraph);
+
+      const heading = document.getElementsbyId("my heading");
+     
+      console.log(heading.InnerHTML);
+
+      heading.InnerHTML="this is my page";
+
+      console.log(heading.InnerHTML);
+
+     const mySpan = document.getElementsbyId("outer span");
+     console.log(myspan.InnerHTML);
+     console.log(mySpan.InnerText);
+     console.log(mySpan.InnerContent);
+
+     document.querySelector("#my heading");
+
+    const listItem= document.createElement("li")
+    const listItem2=unorderedList.appemdchild(listItem)
+    </script>
+
+
+</body>
+</html>

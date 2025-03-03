@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample page Ajay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'calibri',Georgia, Times, 'Times New Roman', serif;
+}
+:root{
+    --primery-color:#005f73;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: var(--primery-color);
+    padding-left: 60px;
+    padding-right: 60px;
+    
+
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    
+}
+.nav-bar>p{
+    
+    font-size: 20px;
+    padding: 30px;
+    
+}
+
+img{
+    width: 100%;
+    position: relative;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.middle-para{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   top: 50vh;
+   flex-direction: column;
+   padding: 30px;
+   border-radius: 3px;
+   background-color: rgba(0, 0, 0, 0.603);
+   color: aliceblue
+}
+.btn{
+    border: none;
+    background-color: #db5024;
+    color: wheat;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.middle-para >p {
+    font-size: 20px;
+    padding: 30px;
+
+}
+.service{
+    padding: 20px;
+}
+.service> #h2{
+    padding: 10px;
+    color: blue;
+
+}
+.service > #para{
+    padding: 10px;
+
+}
+.service>ul{
+padding-left: 40px;
+}
+
+
+.about{
+    padding: 20px;
+    background-color: rgb(211, 206, 206);
+}
+.about>#h2{
+    padding: 10px;
+    color: green;
+
+}
+.about > #para{
+    padding: 10px;
+
+}
+.contactUs{
+    padding: 20px;
+}
+.contactUs>#h2{
+    padding: 10px;
+    color: rgb(221, 57, 178);
+
+}
+.contactUs > #para{
+    padding-left: 10px;
+    padding: 5px;
+
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: var(--primery-color);
+    padding: 20px;
+    color: aliceblue;
+}
+
+</style>
+<body>
+    <div class="header">
+        <h1>Our Bussiness Name </h1>
+        <div class="nav-bar">
+            <p>Services</p>
+            <p>About Us</p>
+            <p>Contact</p>
+        </div>
+    </div>
+    <div class="container">
+        <img src="https://cdn.prod.website-files.com/66a08e07fa6352714fc1d6da/66a0ab265139b022619df0c9_Featured-Image-F-and-B-of-MO-scaled.webp"alt="">
+        <div class="middle-para"> 
+            <h2 style="font-size: 40px;">Welcome to Our Business</h2>
+            <p style="font-size: 20px;">Your One Stop Solution for all your need </p>
+            <input class="btn" type="button" value=" Get in Touch">
+        </div>
+    </div>
+    <section>
+        <div class="service">
+            <h2 id="h2">Our Service</h2>
+            <p id="para">We offer wide range of service to help your Business Grow </p>
+            <ul>
+                <li>Consulting Services</li>
+                <li>Proffesional Training</li>
+                <li>Marketing and advertisement Solutions</li>
+            </ul>
+        </div>
+        <div class="about">
+            <h2 id="h2">About Us</h2>
+            <p id="para">We are Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eaque aut facilis esse laborum pariatur, neque officiis cum reiciendis cupiditat Lorem ipsum, adipisicing elit. Dolorum, sit!</p>
+         </div>
+        <div class="contactUs">
+            <h2 id="h2">Contact Us</h2>
+            <p id="para">Phone : (+91)7899876543</p>
+            <p id="para">E-mail : contact@busuiness.com</p>
+           
+         </div>
+    </section>
+    <!-- Services section -->
+     
+    <div class="footer">
+        <p>&copy; 2023 Small Bussines. All Rights reserved</p>
+    </div>
+</body>
+</html>

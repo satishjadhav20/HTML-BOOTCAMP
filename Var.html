@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root{
+        --primary-color:red;
+        --secondary-color:yellow;
+    }
+    .h1{
+        color: var(--primary-color);
+    }
+    .p{
+        color: var(--secondary-color);
+    }
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        height: 100vh;
+        width: 100%;
+        background-color: gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .left-child{
+        width: 25%;
+        height: 100%;
+        background-color: blueviolet;  
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow: auto;
+    }
+    .left-child p {
+        font-size: 32px;
+    }
+    .right-child{
+        width: 75%;
+        height: 100%;
+        background-color: aqua;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="left-child">
+            <p>This is text</p>
+            <p>This is text</p>
+            <p>This is text</p>
+            <p>This is text</p>
+            <p>This is text</p>
+            <p>This is text</p>
+            <p>This is text</p>
+            <p>This is text</p>
+            <p>This is text</p>
+            <p>This is text</p>
+            <p>This is text</p>
+            <p>This is text</p>
+            <p>This is text</p>
+            <p>This is text</p>
+            <p>This is text</p>
+            <p>This is text</p>
+            <p>This is text</p>
+            <p>This is text</p>
+            <p>This is text</p>
+            <p>This is text</p>
+            <p>This is text</p>
+            <p>This is text</p>
+            <p>This is text</p>
+
+        </div>
+        <div class="right-child">
+
+        </div>
+    </div>
+</body>
+</html>

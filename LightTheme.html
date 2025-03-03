@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --background-color: white;
+            --text-color: black;
+
+        }
+
+        @media(prefers-color-scheme : dark) {
+            :root {
+
+                --background-color: black;
+                --text-color: white;
+            }
+        }
+
+        .box {
+            height: 50vh;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        .box2 {
+            height: 50vh;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        .box3 {
+            height: 50vh;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        div>p{
+            font-size: larger;
+            
+        }
+        div p{
+            color: aqua;
+        }
+        .box2 +.box3{
+                height: 100vh;
+                background-color: aqua;
+                
+        }
+        p~p{
+            color: aliceblue;
+        }
+        p + p{
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>this is text</p>
+        <p>i love king</p>
+    </div>
+    <div class="box2">
+        <p>satish jadhav</p>
+        <p>vishwadeep tanugade</p>
+    </div>
+    <div class="box3">
+        <p>namdev maruti jadhav</p>
+        <p>sagar sadba tanugade</p>
+    </div>
+</body>
+
+</html>

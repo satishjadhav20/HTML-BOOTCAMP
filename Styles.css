@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #87CEEB; /* Sky blue background */
+}
+
+.flag-container {
+    position: relative;
+    width: 100px;
+    height: 300px;
+}
+
+.pole {
+    position: absolute;
+    left: 45px;
+    bottom: 0;
+    width: 10px;
+    height: 100%;
+    background-color: #555;
+}
+
+.flag {
+    position: absolute;
+    left: 55px;
+    bottom: 0;
+    width: 100px;
+    height: 50px;
+    background-color: #ff0000; /* Red flag */
+    animation: hoist 3s ease-in-out forwards;
+}
+
+@keyframes hoist {
+    0% {
+        bottom: 0;
+    }
+    100% {
+        bottom: 250px; /* Raise the flag to the top */
+    }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box; 
+        }
+        .parent {
+            display: grid;
+            grid-template-areas: 
+                "hdr hdr"
+                "opt cont"
+                "ftr ftr";
+            gap: 2px;
+            height: 100vh; 
+        }
+        .header {
+            grid-area: hdr;
+            height: 10vh;
+            background-color: rgb(240, 57, 57);
+        }
+        .left {
+            grid-area: opt;
+            width: 20vw;
+            height: 80vh; 
+            background-color: rgb(108, 182, 252);
+            overflow: auto;
+        }
+        .main {
+            grid-area: cont;
+            width: 80vw;
+            background-color: rgb(180, 248, 55);
+        }
+        .footer {
+            grid-area: ftr;
+            height: 10vh;
+            background-color: rgb(44, 252, 78);
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="header"></div>
+        <div class="left">
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+            <p>satish</p>
+        </div>
+        <div class="main"></div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>

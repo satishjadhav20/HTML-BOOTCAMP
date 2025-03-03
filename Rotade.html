@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: rgba(255, 198, 75, 0.712);
+    }
+    .box{
+        height: 200px;
+        width: 200px;
+        background-color: rgba(27, 23, 26, 0.466);
+       /* rotate: 30deg;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+     
+       transition:  rotate 1s ease-in-out;
+       translate: 100px 100px;
+    }
+    .box:hover{
+        scale: 1.1;
+        background-color: rgba(65, 44, 6, 0.685);
+       
+        rotate: 45deg;
+        border-radius: 100px;
+    }
+    .box2{
+        height: 200px;
+        width: 200px;
+        background-color: rgba(0, 0, 0, 0.527);
+        border-radius: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: rotate-animation 5s linear 1s infinite;
+    }
+    @keyframes rotate-animation{
+        to{
+            rotate:  0deg;
+        }
+        from{
+            rotate: 360deg;
+        }
+    }
+    .box3{
+        display: flex;
+        align-items: center;
+       
+        background-color: black;
+        color: white;
+       
+        gap: 50px;
+        overflow: hidden;
+        animation: p-animation 40s linear infinite;
+    }
+    @keyframes p-animation{
+        from{
+            translate: 100%;
+        }
+        to{
+            translate: 0;
+        }
+    }
+    .box3 p{
+        flex-shrink: 0;
+    }
+</style>
+<body>
+    <div class="box">satish</div>
+    <div class="box2">prajwal</div>
+    <div class="box3">
+        <p>satish</p>
+        <p>satish</p>
+        <p>satish</p>
+        <p>satish</p>
+        <p>satish</p>
+        <p>satish</p>
+        <p>satish</p>
+        <p>satish</p>
+        <p>satish</p>
+        <p>satish</p>
+        <p>satish</p>
+        <p>satish</p>
+        <p>satish</p>
+        <p>satish</p>
+        <p>satish</p>
+        <p>satish</p>
+        <p>satish</p>
+        <p>satish</p>
+        <p>satish</p>
+        <p>satish</p>
+        <p>satish</p>
+        <p>satish</p>
+        <p>satish</p>
+        <p>satish</p>
+        <p>satish</p>
+        <p>satish</p>
+        <p>satish</p>
+        <p>satish</p>
+        <p>satish</p>
+        <p>satish</p>
+    </div>
+</body>
+</html>
